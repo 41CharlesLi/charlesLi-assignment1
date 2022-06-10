@@ -1,0 +1,42 @@
+@mixin buttonStyles() {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    line-height: 29px;
+    text-decoration: none;
+    color: $darkerGrey;
+    border: 3px solid $deepOrange;
+    padding: 10px; 
+}
+
+@mixin h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    color: $deepOrange;
+    
+}
+
+@mixin h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+@mixin bodyText{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+@mixin nav{
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 20px;
+    text-align: right;
+    line-height: 20px;
+}
