@@ -3,10 +3,12 @@
     flex-direction: column;
     align-items: flex-end;
     margin: 20px;
+    @media(min-width:$largeViewport){
+        display: none;
+    }
 }
 
 .burgerWrapper div{
-    
     width: 60px;
     height: 8px;
     background-color: black;
@@ -15,31 +17,84 @@
 
 nav{
     display:none;
+    @media(min-width:$largeViewport){
+        @include nav;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        color: $darkerGrey;
+        list-style: none; 
+            ul{
+            display: flex;
+            flex-direction: row;
+            margin: 22px;
+        }
+                li{
+                margin: 10px;
+            }
+    }
+}
+
+.socialLinks {
+    display: none;
+    @media(min-width:$largeViewport){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:min-content;
+        margin-left: 50px;
+        li {
+            margin: 10px;
+            color: $deepOrange;
+        }
+    }
 }
 
 .header-img img{
-    position: absolute;
-    top: 150px;
-    left: -200px;
-    height: 75vh;
+    height: 80vh;
+    margin-left: -200px;
+    margin-top: -80px;
+@media(min-width:$mediumViewport){
+    margin-left: -300px;
+@media(min-width: $largeViewport){
+    margin: 0;
+    }   
+}
+}
+
+.header-img {
+    @media(min-width: $largeViewport){
+        order: -1;
+    }
 }
 
 h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 80px;
-    line-height: 80px;
-    color:$deepOrange;
-    margin: 0;
+    font-size: 18vw;
+    line-height: 17vw;
+    color:$deepOrange;   
     text-align: right;
-    margin: 30px;
-    word-break: break-all;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    @media(min-width:$largeViewport){
+        font-size: 10vw;
+        line-height: 8vw;
+        align-self: center;
     
+    }
 }
 
-.headerContainer{
-    margin-bottom: 500px;
+.wrapper.header {
+    width:100%;
+    @media (min-width:$largeViewport){
+    display:flex;
+    flex-direction: row;  
+    margin-top:-90px;
 }
+} 
+
 
 
 // nav{
