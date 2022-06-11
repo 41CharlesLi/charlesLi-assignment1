@@ -42,7 +42,7 @@ nav{
         flex-direction: column;
         justify-content: center;
         width:min-content;
-        margin-left: 50px;
+        margin-left: 75px;
         li {
             margin: 10px;
             color: $deepOrange;
@@ -79,8 +79,8 @@ h1{
     margin-right: 30px;
     margin-bottom: 20px;
     @media(min-width:$largeViewport){
-        font-size: 10vw;
-        line-height: 8vw;
+        font-size: 120.4px;
+        line-height: 120px;
         align-self: center;
     
     }

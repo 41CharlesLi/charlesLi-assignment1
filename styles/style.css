@@ -319,7 +319,7 @@ nav {
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
-    margin-left: 50px;
+    margin-left: 75px;
   }
   .socialLinks li {
     margin: 10px;
@@ -364,8 +364,8 @@ h1 {
 }
 @media (min-width: 1024px) {
   h1 {
-    font-size: 10vw;
-    line-height: 8vw;
+    font-size: 120.4px;
+    line-height: 120px;
     -ms-flex-item-align: center;
         align-self: center;
   }
@@ -384,5 +384,115 @@ h1 {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-top: -90px;
+  }
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  text-align: center;
+  color: #E75605;
+  text-align: center;
+  font-size: 8vw;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    color: #E75605;
+  }
+}
+
+.textContainer {
+  text-align: center;
+  padding: 5vw;
+  margin-bottom: 5vh;
+}
+.textContainer p {
+  margin-bottom: 4vh;
+}
+@media (min-width: 768px) {
+  .textContainer {
+    padding: 0vw 5vw 1vw 5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .textContainer {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+
+.textContainer a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 29px;
+  text-decoration: none;
+  color: #1F2022;
+  border: 3px solid #E75605;
+  padding: 10px;
+}
+
+.restaurantInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+@media (min-width: 1024px) {
+  .restaurantInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .reversed {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.restaurantInfo img {
+  width: 100vw;
+}
+@media (min-width: 1024px) {
+  .restaurantInfo img {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .textContainer.centered {
+    text-align: left;
+    padding-left: 0;
+  }
+  .textContainer.centered h2 {
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+.dessert-photo {
+  padding: 5vw;
+}
+@media (min-width: 1024px) {
+  .dessert-photo {
+    padding-right: 30px;
+    max-width: 25vw;
   }
 }
