@@ -237,6 +237,25 @@ img {
   display: block;
 }
 
+.header {
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: -90px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .burgerWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,8 +268,9 @@ img {
       -ms-flex-align: end;
           align-items: flex-end;
   margin: 20px;
+  margin-bottom: 80px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .burgerWrapper {
     display: none;
   }
@@ -263,11 +283,11 @@ img {
   margin: 3px;
 }
 
-nav {
+nav ul {
   display: none;
 }
-@media (min-width: 1024px) {
-  nav {
+@media (min-width: 1280px) {
+  nav ul {
     font-family: "Montserrat";
     font-weight: normal;
     font-size: 20px;
@@ -286,7 +306,7 @@ nav {
     color: #1F2022;
     list-style: none;
   }
-  nav ul {
+  nav ul ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -296,15 +316,70 @@ nav {
             flex-direction: row;
     margin: 22px;
   }
-  nav li {
+  nav ul li {
     margin: 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .headerImgContainer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.headerImg {
+  width: 100vw;
+  margin-top: -60px;
+  margin-left: -30vw;
+}
+@media (min-width: 768px) {
+  .headerImg {
+    max-width: 80vw;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 1280px) {
+  .headerImg {
+    max-width: 800px;
+    margin: 0;
+  }
+}
+
+h1 {
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14vw;
+  line-height: 12vw;
+  color: #E75605;
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 12vw;
+    line-height: 10vw;
+  }
+}
+@media (min-width: 1280px) {
+  h1 {
+    margin-left: -50px;
+    font-size: clamp(1rem, 8vw, 9rem);
+    line-height: clamp(1rem, 7.5vw, 7rem);
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding: 0;
   }
 }
 
 .socialLinks {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .socialLinks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -319,123 +394,11 @@ nav {
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
-    margin-left: 75px;
   }
   .socialLinks li {
     margin: 10px;
     color: #E75605;
   }
-}
-
-.header-img img {
-  height: 80vh;
-  margin-left: -200px;
-  margin-top: -80px;
-}
-@media (min-width: 768px) {
-  .header-img img {
-    margin-left: -300px;
-  }
-}
-@media (min-width: 768px) and (min-width: 1024px) {
-  .header-img img {
-    margin: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header-img {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-}
-
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 18vw;
-  line-height: 17vw;
-  color: #E75605;
-  text-align: right;
-  margin-top: 30px;
-  margin-right: 30px;
-  margin-bottom: 20px;
-}
-@media (min-width: 1024px) {
-  h1 {
-    font-size: 120.4px;
-    line-height: 120px;
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-}
-
-.wrapper.header {
-  width: 100%;
-}
-@media (min-width: 1024px) {
-  .wrapper.header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: -90px;
-  }
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 42px;
-  text-align: center;
-  color: #E75605;
-  text-align: center;
-  font-size: 8vw;
-}
-@media (min-width: 1024px) {
-  h2 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 42px;
-    text-align: center;
-    color: #E75605;
-  }
-}
-
-.textContainer {
-  text-align: center;
-  padding: 5vw;
-  margin-bottom: 5vh;
-}
-.textContainer p {
-  margin-bottom: 4vh;
-}
-@media (min-width: 768px) {
-  .textContainer {
-    padding: 0vw 5vw 1vw 5vw;
-  }
-}
-@media (min-width: 1024px) {
-  .textContainer {
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-}
-
-.textContainer a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  line-height: 29px;
-  text-decoration: none;
-  color: #1F2022;
-  border: 3px solid #E75605;
-  padding: 10px;
 }
 
 .restaurantInfo {
@@ -447,7 +410,7 @@ h2 {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .restaurantInfo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -459,7 +422,60 @@ h2 {
   }
 }
 
-@media (min-width: 1024px) {
+.textContainer {
+  text-align: center;
+  padding: 5vw;
+  margin-bottom: 5vh;
+}
+.textContainer h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  text-align: center;
+  color: #E75605;
+  text-align: center;
+  font-size: 8vw;
+}
+@media (min-width: 1280px) {
+  .textContainer h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    color: #E75605;
+  }
+}
+.textContainer p {
+  font-family: "Catamaran", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  margin-bottom: 4vh;
+}
+.textContainer a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 29px;
+  text-decoration: none;
+  color: #1F2022;
+  border: 3px solid #E75605;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .textContainer {
+    padding: 0vw 5vw 1vw 5vw;
+  }
+}
+@media (min-width: 1280px) {
+  .textContainer {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+
+@media (min-width: 1280px) {
   .reversed {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -470,27 +486,28 @@ h2 {
 .restaurantInfo img {
   width: 100vw;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .restaurantInfo img {
+    max-width: 800px;
     width: 50vw;
   }
 }
 
-@media (min-width: 1024px) {
-  .textContainer.centered {
+@media (min-width: 1280px) {
+  .centered {
     text-align: left;
     padding-left: 0;
   }
-  .textContainer.centered h2 {
+  .centered h2 {
     text-align: left;
-    margin-top: 0;
+    margin-top: 15px;
   }
 }
 
 .dessert-photo {
   padding: 5vw;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .dessert-photo {
     padding-right: 30px;
     max-width: 25vw;
