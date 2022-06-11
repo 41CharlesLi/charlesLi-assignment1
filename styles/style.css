@@ -237,136 +237,50 @@ img {
   display: block;
 }
 
-nav {
+.burgerWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 50px;
-}
-nav li {
-  padding: 20px;
-}
-
-@media (max-width: 420px) {
-  .header-img img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 20px;
 }
 
-.socialLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #E75605;
+.burgerWrapper div {
+  width: 60px;
+  height: 8px;
+  background-color: black;
+  margin: 3px;
 }
 
-.socialLinks ul li {
-  margin: 10px;
-  font-size: 25px;
+nav {
+  display: none;
 }
 
-nav ul {
-  font-family: "Montserrat";
-  font-weight: normal;
-  font-size: 20px;
-  text-align: right;
-  line-height: 20px;
-  color: #1F2022;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.header-img img {
+  position: absolute;
+  top: 150px;
+  left: -200px;
+  height: 75vh;
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 146.4px;
-  line-height: 120px;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 80px;
   color: #E75605;
   margin: 0;
-  -ms-flex-item-align: center;
-      align-self: center;
+  text-align: right;
+  margin: 30px;
   word-break: break-all;
 }
 
 .headerContainer {
-  width: 50vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 42px;
-  text-align: center;
-  color: #E75605;
-  text-align: start;
-}
-
-.textContainer {
-  -ms-flex-item-align: center;
-      align-self: center;
-  padding: 50px;
-}
-
-.textContainer a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  line-height: 29px;
-  text-decoration: none;
-  color: #1F2022;
-  border: 3px solid #E75605;
-  padding: 10px;
-}
-
-p {
-  font-family: "Catamaran", sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 29px;
-  padding-bottom: 25px;
-}
-
-.wrapper.reversed {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.dessert-photo {
-  margin-top: 120px;
-}
-
-.restaurantInfo.centered {
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-bottom: 500px;
 }

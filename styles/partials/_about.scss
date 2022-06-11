@@ -1,33 +1,33 @@
-h2{
-    @include h2;
-    text-align:start;
-}
+// h2{
+//     @include h2;
+//     text-align:start;
+// }
 
-.textContainer {
-    align-self: center;
-    padding: 50px;
+// .textContainer {
+//     align-self: center;
+//     padding: 50px;
 
-}
+// }
 
-.textContainer a{
-    @include buttonStyles
-}
+// .textContainer a{
+//     @include buttonStyles
+// }
 
-p{
-    @include bodyText;
-    padding-bottom: 25px;
-}
+// p{
+//     @include bodyText;
+//     padding-bottom: 25px;
+// }
 
-.wrapper.reversed{
-   display: flex;
-   flex-direction: row-reverse;
-} 
+// .wrapper.reversed{
+//    display: flex;
+//    flex-direction: row-reverse;
+// } 
 
-.dessert-photo {
-    margin-top: 120px;
-}
+// .dessert-photo {
+//     margin-top: 120px;
+// }
 
-.restaurantInfo.centered{
-    margin-left: 150px;
-    margin-right: 150px;
-}
+// .restaurantInfo.centered{
+//     margin-left: 150px;
+//     margin-right: 150px;
+// }
